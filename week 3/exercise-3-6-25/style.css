@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;  /* makes the heading dark gray */
+}
+
+ul {
+
+    list-style-type: none;  /* Removes bullet points.*/ 
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;      /* Shows a pointer on hover.*/ 
+    border-radius: 5px;     /* Rounds the edges.*/ 
+    transition: 0.3s;      /* Smooth color changes.*/ 
+}
+
+/* Unique Colors */
+#create-btn { background-color: #28a745; color: rgb(138, 168, 137); }
+#read-btn { background-color: #007bff; color: rgb(150, 145, 202); }
+#update-btn { background-color: #ffc107; color: rgb(150, 157, 124); }
+#delete-btn { background-color: #dc3545; color: rgb(198, 143, 143); }
+
+/* Hover Effects */
+#create-btn:hover { background-color: #2c86b7; }
+#read-btn:hover { background-color: #1dd0c4; }
+#update-btn:hover { background-color: #82306f; }
+#delete-btn:hover { background-color: #9abc2a; }

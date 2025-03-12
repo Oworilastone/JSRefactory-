@@ -212,6 +212,7 @@ console.log('Falsy value 3:', Boolean(""));        // false
 // Create a new Date object
 const now = new Date();
 
+                                                             // EXERCISE FOR 21th FEB 
 // Get the year
 console.log("Current year:", now.getFullYear());
 
@@ -302,4 +303,65 @@ xValues.forEach(x => {
 console.log('\nThe equation y = x² + 6x + 9 equals 0 when x = -3');
 console.log('This can be verified: ' + calculateY(-3));
 
+// Prompt user for input
+let fName = prompt("Enter your first name:");
+let lName = prompt("Enter your last name:");
+let hours = parseFloat(prompt("Enter hours:"));
+let ratePerHour = parseFloat(prompt("Enter rate per hour:"));
+
+// Calculate weekly earnings
+let weeklyEarning = hours * ratePerHour;
+console.log(`Your weekly earning is ${weeklyEarning}`);
+
+// Check name length
+let fullNameLength = firstName.length + lastName.length;
+if (fullNameLength > 7) {
+    console.log("Your name is long");
+} else {
+    console.log("Your name is short");
+}
+
+// Compare first name and last name length
+if (firstName.length > lastName.length) {
+    console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`);
+} else if (firstName.length < lastName.length) {
+    console.log(`Your family name, ${lastName} is longer than your first name, ${firstName}`);
+} else {
+    console.log(`Your first name, ${firstName} and your family name, ${lastName} are of equal length`);
+}
+
+// Check if user is old enough to drive
+let currentYear = new Date().getFullYear();
+let age1 = currentYear - birthYear;
+if (age1 >= 18) {
+    console.log(`You are ${age1}. You are old enough to drive.`);
+} else {
+    console.log(`You are ${age1}. You will be allowed to drive after ${18 - age1} years.`);
+}
+
+// Calculate number of seconds a person can live
+let secondsLived = yearsLived * 365 * 24 * 60 * 60;
+console.log(`You lived ${secondsLived} seconds.`);
+
+// Create human-readable time format
+let now1 = new Date();
+let yyyy = now1.getFullYear();
+let mm = String(now1.getMonth() + 1).padStart(2, '0');
+let dd = String(now1.getDate()).padStart(2, '0');
+let hh = String(now1.getHours()).padStart(2, '0');
+let min = String(now1.getMinutes()).padStart(2, '0');
+
+console.log(`${yyyy}-${mm}-${dd} ${hh}:${min}`);
+console.log(`${dd}-${mm}-${yyyy} ${hh}:${min}`);
+console.log(`${dd}/${mm}/${yyyy} ${hh}:${min}`);
+
+// Create human-readable time format
+let now2 = new Date();
+let yyyy1 = now2.getFullYear();
+let mm1 = String(now2.getMonth() + 1).padStart(2, '0');
+let dd1 = String(now2.getDate()).padStart(2, '0');
+let hh1 = String(now2.getHours()).padStart(2, '0');
+let min1 = String(now2.getMinutes()).padStart(2, '0');
+
+console.log(`${yyyy1}-${mm1}-${dd1} ${hh1}:${min1}`);
 
