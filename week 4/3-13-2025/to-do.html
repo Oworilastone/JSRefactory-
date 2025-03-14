@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <h1>Welcome, <span id="username">User </span>!</h1>
+    <div class="todo-input">
+        <input type="text" id="nameInput" placeholder="Enter your name..." onblur="saveUsername()">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <textarea id="taskDescription" placeholder="Describe your task in detail..."></textarea>
+        <select id="category">
+            <option value="Education">Education</option>
+            <option value="School">School</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Spiritual Life">Spiritual Life</option>
+            <option value="Enjoyment">Enjoyment</option>
+            <option value="Work">Work</option>
+            <option value="Family">Family</option>
+        </select>
+        <input type="datetime-local" id="taskDateTime">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+</div>
+    <script src="../3-13-2025/to-do.js"></script>
+</body>
+</html>
